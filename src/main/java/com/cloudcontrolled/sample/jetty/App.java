@@ -19,7 +19,7 @@ public class App
         Integer serverPort = Integer.valueOf(System.getenv("PORT"));
         Server server = new Server(serverPort);
 
-        ContextHandler context = newContextHandler("/", "template/hello.html");
+        ContextHandler context = newContextHandler("/", "template/index.html");
         ContextHandler resources = newContextHandler("/static", "static");
 
         HandlerList handlers = new HandlerList();
